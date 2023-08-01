@@ -36,14 +36,15 @@ function MessageInput({ conversationId, refetchMessages }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="flex justify-between">
       <input
         type="text"
         value={content}
         onChange={(e) => setContent(e.target.value)}
         placeholder="Type here"
+        className="border-2 rounded m-1 p-1 w-56"
       />
-      <button type="submit">Send</button>
+      <button type="submit" className="border-2 rounded-lg m-1 px-3 p-1">Send</button>
     </form>
   );
 }

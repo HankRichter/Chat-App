@@ -27,8 +27,8 @@ function Messages({
     <>
       <div>
         {data.getMessages.map((message) => (
-          <div key={message._id}>
-            <p>{message.content}</p>
+          <div key={message._id} className="flex border-2 m-2 p-2 rounded-lg w-44 h-9">
+            <p className="flex flex-wrap content-center">{message.content}</p>
             {/* <p>Sender:{message.sender.username}</p> */}
             {/* <p>{message.createdAt}</p> */}
           </div>

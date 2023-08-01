@@ -36,14 +36,14 @@ function Conversation() {
     <>
       <div className="flex flex-wrap flex-col align-content m-5 ">
         {/* <Navbar /> */}
-        <div className="m-2 border-2">
+        <div className="m-2 p-2 border-2">
           <Messages
             conversationId={data.getConversations[0]._id}
             shouldRefetchMessages={shouldRefetchMessages}
             setShouldRefetchMessages={toggleRefetch}
           />
         </div>
-        <div className="flex m-2 border-2 justify-center mt-10">
+        <div className="m-1">
           <MessageInput
             conversationId={data.getConversations[0]._id}
             refetchMessages={refetchMessages}
